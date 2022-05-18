@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './component/users/users.component';
 import { UserdetailComponent } from './component/userdetail/userdetail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, UsersComponent, UserdetailComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
